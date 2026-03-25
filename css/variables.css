@@ -1,12 +1,13 @@
 /* Brand Tokens — Adenine Research */
 :root {
-  /* Colors */
-  --color-primary:      #1a3a5c;
-  --color-accent:       #00a896;
-  --color-background:   #f8f9fa;
-  --color-surface:      #ffffff;
-  --color-text:         #1c1c1e;
-  --color-text-muted:   #6b7280;
+  /* Colors — Dark Theme */
+  --color-primary:      #e03020;
+  --color-accent:       #ff5a45;
+  --color-background:   #0d0d0d;
+  --color-surface:      #1a1a1a;
+  --color-surface-2:    #242424;
+  --color-text:         #f0f0f0;
+  --color-text-muted:   #9ca3af;
 
   /* Typography */
   --font-heading: 'Inter', sans-serif;

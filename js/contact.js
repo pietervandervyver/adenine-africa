@@ -114,7 +114,7 @@ function showErrorBanner() {
     banner.className = 'form-error-banner';
     banner.innerHTML =
       '<p>Something went wrong. Please try again or email us directly at ' +
-      '<a href="mailto:info@adenineresearch.co.za">info@adenineresearch.co.za</a>.</p>';
+      '<a href="mailto:info@adenine.africa">info@adenine.africa</a>.</p>';
     const form = document.getElementById('contact-form');
     if (form) form.insertAdjacentElement('beforebegin', banner);
   }

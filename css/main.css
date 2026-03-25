@@ -17,7 +17,7 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
   font-family: var(--font-heading);
-  color: var(--color-primary);
+  color: var(--color-text);
   line-height: 1.2;
   font-weight: 700;
 }
@@ -83,7 +83,7 @@ header {
   top: 0;
   z-index: 100;
   background-color: var(--color-surface);
-  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.4);
 }
 
 #site-nav {
@@ -103,7 +103,7 @@ header {
   font-family: var(--font-heading);
   font-size: var(--font-size-lg);
   font-weight: 700;
-  color: var(--color-primary);
+  color: var(--color-text);
   text-decoration: none;
 }
 
@@ -142,7 +142,7 @@ header {
 
 #nav-links a.active,
 #nav-links a[aria-current="page"] {
-  color: var(--color-primary);
+  color: var(--color-accent);
   border-bottom-color: var(--color-accent);
 }
 
@@ -152,7 +152,7 @@ header {
   justify-content: center;
   width: 2.5rem;
   height: 2.5rem;
-  color: var(--color-primary);
+  color: var(--color-text);
   font-size: var(--font-size-lg);
   border-radius: var(--radius-sm);
   transition: background-color var(--transition-fast);
@@ -168,8 +168,9 @@ header {
    ============================================================ */
 
 footer {
-  background-color: var(--color-primary);
-  color: var(--color-surface);
+  background-color: #111111;
+  color: var(--color-text);
+  border-top: 1px solid #2a2a2a;
   padding-block: var(--space-2xl);
 }
 
@@ -216,28 +217,28 @@ footer .container {
 }
 
 .btn-primary {
-  background-color: var(--color-accent);
-  color: var(--color-surface);
-  border-color: var(--color-accent);
+  background-color: var(--color-primary);
+  color: #ffffff;
+  border-color: var(--color-primary);
 }
 
 .btn-primary:hover,
 .btn-primary:focus {
-  background-color: #008f7e;
-  border-color: #008f7e;
-  color: var(--color-surface);
+  background-color: var(--color-accent);
+  border-color: var(--color-accent);
+  color: #ffffff;
 }
 
 .btn-outline {
   background-color: transparent;
-  color: var(--color-primary);
-  border-color: var(--color-primary);
+  color: var(--color-accent);
+  border-color: var(--color-accent);
 }
 
 .btn-outline:hover,
 .btn-outline:focus {
-  background-color: var(--color-primary);
-  color: var(--color-surface);
+  background-color: var(--color-accent);
+  color: #ffffff;
 }
 
 /* ============================================================
@@ -316,8 +317,9 @@ footer .container {
    ============================================================ */
 
 .hero {
-  background-color: var(--color-primary);
-  color: var(--color-surface);
+  background-color: #111111;
+  color: var(--color-text);
+  border-bottom: 1px solid #2a2a2a;
 }
 
 .hero__inner {
@@ -331,13 +333,13 @@ footer .container {
 }
 
 .hero__text h1 {
-  color: var(--color-surface);
+  color: var(--color-text);
   margin-bottom: var(--space-md);
 }
 
 .hero__tagline {
   font-size: var(--font-size-lg);
-  color: rgba(255, 255, 255, 0.85);
+  color: var(--color-text-muted);
   margin-bottom: var(--space-xl);
 }
 
@@ -385,18 +387,19 @@ footer .container {
    ============================================================ */
 
 .page-header {
-  background-color: var(--color-primary);
-  color: var(--color-surface);
+  background-color: #111111;
+  color: var(--color-text);
+  border-bottom: 1px solid #2a2a2a;
 }
 
 .page-header h1 {
-  color: var(--color-surface);
+  color: var(--color-text);
   margin-bottom: var(--space-md);
 }
 
 .page-header__lead {
   font-size: var(--font-size-lg);
-  color: rgba(255, 255, 255, 0.85);
+  color: var(--color-text-muted);
   max-width: 72ch;
   margin-bottom: 0;
 }
@@ -443,7 +446,6 @@ footer .container {
   margin-bottom: var(--space-sm);
   color: var(--color-accent);
 }
-
 .research-section__text p {
   max-width: 72ch;
   line-height: 1.75;
@@ -462,7 +464,7 @@ footer .container {
   max-width: 480px;
   height: auto;
   border-radius: var(--radius-md);
-  border: 1px solid rgba(0, 0, 0, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.08);
 }
 
 /* Benefits list */
@@ -492,7 +494,7 @@ footer .container {
 .benefits-list__item h3 {
   font-size: var(--font-size-lg);
   margin-bottom: var(--space-sm);
-  color: var(--color-primary);
+  color: var(--color-text);
 }
 
 .benefits-list__item p {
@@ -519,7 +521,7 @@ footer .container {
   padding: var(--space-lg);
   background-color: var(--color-surface);
   border-radius: var(--radius-md);
-  border: 1px solid rgba(0, 0, 0, 0.07);
+  border: 1px solid rgba(255, 255, 255, 0.07);
 }
 
 .publication p {
@@ -533,7 +535,7 @@ footer .container {
 
 .publication__title {
   font-weight: 600;
-  color: var(--color-primary);
+  color: var(--color-text);
   font-size: var(--font-size-base);
 }
 
@@ -587,7 +589,7 @@ footer .container {
 .team-card {
   background-color: var(--color-surface);
   border-radius: var(--radius-md);
-  border: 1px solid rgba(0, 0, 0, 0.07);
+  border: 1px solid rgba(255, 255, 255, 0.07);
   overflow: hidden;
   display: flex;
   flex-direction: column;
@@ -618,7 +620,7 @@ footer .container {
 
 .team-card__name {
   font-size: var(--font-size-xl);
-  color: var(--color-primary);
+  color: var(--color-text);
   margin-bottom: var(--space-xs);
 }
 
@@ -732,7 +734,7 @@ a.contact-info__value:focus {
 .form-field label {
   font-weight: 600;
   font-size: var(--font-size-base);
-  color: var(--color-primary);
+  color: var(--color-text);
 }
 
 .form-field input,
@@ -742,8 +744,8 @@ a.contact-info__value:focus {
   font-family: var(--font-body);
   font-size: var(--font-size-base);
   color: var(--color-text);
-  background-color: var(--color-surface);
-  border: 1.5px solid #d1d5db;
+  background-color: var(--color-surface-2);
+  border: 1.5px solid #3a3a3a;
   border-radius: var(--radius-sm);
   transition: border-color var(--transition-fast), box-shadow var(--transition-fast);
   line-height: 1.5;
@@ -753,7 +755,7 @@ a.contact-info__value:focus {
 .form-field textarea:focus {
   outline: none;
   border-color: var(--color-accent);
-  box-shadow: 0 0 0 3px rgba(0, 168, 150, 0.2);
+  box-shadow: 0 0 0 3px rgba(224, 48, 32, 0.2);
 }
 
 .form-field input[aria-invalid="true"],
@@ -782,11 +784,11 @@ a.contact-info__value:focus {
 /* Success banner */
 
 .form-success {
-  background-color: #d1fae5;
-  border: 1px solid #6ee7b7;
+  background-color: #1a2e1a;
+  border: 1px solid #2d5a2d;
   border-radius: var(--radius-md);
   padding: var(--space-lg) var(--space-xl);
-  color: #065f46;
+  color: #6ee7b7;
   font-weight: 500;
 }
 
