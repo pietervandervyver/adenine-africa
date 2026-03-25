@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Research — Adenine Research (Pty) Ltd.</title>
+  <meta name="description" content="Explore Adenine Research's work on optical fiber cochlear implants, Computational Neuroscience methods, patient benefits, and scientific publications." />
+  <link rel="stylesheet" href="css/reset.css" />
+  <link rel="stylesheet" href="css/variables.css" />
+  <link rel="stylesheet" href="css/main.css" />
+</head>
+<body>
+
+  <header>
+    <nav id="site-nav" aria-label="Site navigation">
+      <a href="index.html" class="nav-logo">
+        <img src="assets/logo.svg" alt="Adenine Research wordmark" width="180" height="36" />
+      </a>
+      <button id="nav-toggle" aria-expanded="false" aria-controls="nav-links" aria-label="Toggle navigation menu">
+        &#9776;
+      </button>
+      <ul id="nav-links" role="list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="research.html" aria-current="page">Research</a></li>
+        <li><a href="team.html">Team</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- Page Header -->
+    <section class="page-header section" aria-labelledby="research-heading">
+      <div class="container">
+        <h1 id="research-heading">Our Research</h1>
+        <p class="page-header__lead">Adenine Research is developing the next generation of cochlear implants by replacing metal electrodes with optical fibers — combining photonics, optogenetics, and Computational Neuroscience to restore hearing with unprecedented precision.</p>
+      </div>
+    </section>
+
+    <!-- Optical Fibers vs. Metal Electrodes -->
+    <section class="research-optical section section--alt" aria-labelledby="optical-heading">
+      <div class="container research-section__inner">
+        <div class="research-section__text">
+          <h2 id="optical-heading">Optical Fibers vs. Metal Electrodes</h2>
+          <p>Conventional cochlear implants use an array of metal electrodes inserted into the cochlea to deliver electrical current to the auditory nerve. While this approach has restored functional hearing to hundreds of thousands of patients worldwide, it carries fundamental limitations rooted in the physics of electrical stimulation.</p>
+          <p>Electrical current spreads through the fluid-filled cochlea, activating broad populations of auditory nerve fibres simultaneously. This "current spread" limits the number of independent stimulation channels that can be achieved in practice — typically 8 to 10 effective channels, far fewer than the roughly 3,500 inner hair cells in a healthy cochlea. The result is reduced spectral resolution, making it difficult for implant users to perceive music, tonal languages, or speech in noisy environments.</p>
+          <p>Optical cochlear implants replace metal electrodes with optical fibers that deliver precisely focused light pulses to individual or small groups of auditory neurons. Because light does not spread through tissue the way electrical current does, optical stimulation can target discrete tonotopic positions along the cochlea with far greater spatial precision. This enables a substantially higher number of independent stimulation channels — potentially matching or exceeding the spectral resolution of natural hearing.</p>
+          <p>The optical approach requires auditory neurons to be sensitised to light, which is achieved through optogenetics: the introduction of light-sensitive ion channels (channelrhodopsins) into auditory neurons via viral vector delivery. Adenine Research's computational work focuses on modelling the biophysics of this optogenetic sensitisation and optimising the light delivery parameters to maximise neural activation specificity while minimising photodamage.</p>
+        </div>
+        <div class="research-section__visual">
+          <img
+            src="assets/research/placeholder.svg"
+            alt="Diagram comparing electrical current spread from a metal electrode versus focused light delivery from an optical fiber in the cochlea, illustrating the superior spatial precision of optical stimulation"
+            width="480"
+            height="360"
+            loading="lazy"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- Computational Neuroscience Methods -->
+    <section class="research-methods section" aria-labelledby="methods-heading">
+      <div class="container research-section__inner research-section__inner--reverse">
+        <div class="research-section__text">
+          <h2 id="methods-heading">Computational Neuroscience Methods</h2>
+          <p>Adenine Research's approach is grounded in Computational Neuroscience — the use of mathematical models and simulation to understand and predict the behaviour of neural systems. Rather than relying solely on costly and time-consuming animal or clinical experiments, we build detailed computational models that allow us to explore the parameter space of optical cochlear implant design rapidly and rigorously.</p>
+          <h3>Biophysical Modelling</h3>
+          <p>We develop multi-compartment Hodgkin–Huxley-type models of spiral ganglion neurons (SGNs) — the auditory nerve cells targeted by cochlear implants. These models incorporate the kinetics of channelrhodopsin ion channels, allowing us to simulate how individual neurons respond to different light pulse parameters (wavelength, intensity, duration, and repetition rate). By fitting model parameters to electrophysiological data, we can predict in vivo neural responses with high fidelity.</p>
+          <h3>Neural Population Modelling</h3>
+          <p>Individual neuron models are embedded within population-level simulations of the entire auditory nerve, capturing the tonotopic organisation of the cochlea and the statistical variability in neural thresholds across the population. This allows us to predict the perceptual consequences of different stimulation strategies — for example, how a given light pulse pattern will be encoded as a pitch percept by the auditory system.</p>
+          <h3>Signal Processing and Sound Encoding</h3>
+          <p>We develop and evaluate sound-processing algorithms that translate acoustic signals into optical stimulation sequences. This involves adapting classical cochlear implant signal processing strategies (such as continuous interleaved sampling) to the higher channel count and different temporal dynamics of optical stimulation. Machine learning methods are used to optimise encoding strategies for individual patients' neural profiles.</p>
+          <h3>Photonic Waveguide Simulation</h3>
+          <p>Finite-element and ray-tracing simulations of light propagation within the fluid-filled cochlea inform the design of intracochlear optical waveguides. These simulations predict light intensity distributions at target neural sites and guide the selection of fiber geometry, numerical aperture, and insertion depth to maximise stimulation efficacy and minimise off-target activation.</p>
+        </div>
+        <div class="research-section__visual">
+          <img
+            src="assets/research/placeholder.svg"
+            alt="Illustration of a computational model of the auditory nerve showing tonotopic organisation and simulated neural firing patterns in response to optical stimulation"
+            width="480"
+            height="360"
+            loading="lazy"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- Patient Benefits -->
+    <section class="research-benefits section section--alt" aria-labelledby="benefits-heading">
+      <div class="container">
+        <h2 id="benefits-heading">Patient Benefits of Optical Cochlear Implants</h2>
+        <p class="research-benefits__lead">Optical cochlear implants have the potential to transform the quality of life for people with severe-to-profound hearing loss. The key advantages over conventional electrode-based devices include:</p>
+        <ul class="benefits-list" role="list">
+          <li class="benefits-list__item">
+            <h3>Greater Spectral Resolution</h3>
+            <p>By enabling a higher number of independent stimulation channels, optical implants can encode more spectral detail in sound. This translates to improved speech understanding — particularly in noisy environments — and a substantially better ability to perceive music and tonal languages.</p>
+          </li>
+          <li class="benefits-list__item">
+            <h3>Improved Speech Perception in Noise</h3>
+            <p>Current cochlear implant users typically struggle in noisy environments because the limited channel count makes it difficult to separate target speech from background noise. The finer frequency resolution of optical stimulation is expected to significantly improve speech-in-noise performance, one of the most important quality-of-life metrics for implant users.</p>
+          </li>
+          <li class="benefits-list__item">
+            <h3>Reduced Neural Damage</h3>
+            <p>Electrical stimulation can cause electrochemical reactions at the electrode–tissue interface that damage surrounding neural tissue over time. Optical stimulation avoids these electrochemical effects entirely, potentially improving the long-term biocompatibility of the implant and preserving residual hearing in patients with partial hearing loss.</p>
+          </li>
+          <li class="benefits-list__item">
+            <h3>Personalised Stimulation</h3>
+            <p>Computational models of individual patients' auditory nerve anatomy can be used to tailor stimulation parameters to each person's unique neural profile. This personalisation — not feasible with current devices — has the potential to reduce the wide variability in outcomes seen across cochlear implant users today.</p>
+          </li>
+          <li class="benefits-list__item">
+            <h3>Relevance for Africa</h3>
+            <p>Africa carries a disproportionate burden of hearing loss, with limited access to audiological services and rehabilitation. By developing more effective and potentially lower-cost optical implant technology, Adenine Research aims to contribute to closing the hearing healthcare gap on the continent and globally.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Publications & References -->
+    <section class="research-publications section" aria-labelledby="publications-heading">
+      <div class="container">
+        <h2 id="publications-heading">Publications &amp; References</h2>
+        <p class="research-publications__intro">The following publications represent key scientific foundations and related work in optical cochlear implantation and Computational Neuroscience of the auditory system. Adenine Research's own publications will be listed here as they become available.</p>
+        <ol class="publications-list" role="list">
+
+          <li class="publication">
+            <p class="publication__authors">Jeschke, M. &amp; Moser, T.</p>
+            <p class="publication__title">Considering optogenetic stimulation for cochlear implants</p>
+            <p class="publication__venue"><em>Hearing Research</em>, 2015</p>
+            <a class="publication__link" href="https://doi.org/10.1016/j.heares.2015.01.005" target="_blank" rel="noopener noreferrer">doi:10.1016/j.heares.2015.01.005</a>
+          </li>
+
+          <li class="publication">
+            <p class="publication__authors">Hernandez, V. H., Gehrt, A., Reuter, K., Jing, Z., Jeschke, M., Schulz, A. M., Hoch, G., Bhatt, D. L., Bhatt, D., Bhatt, D., Strenzke, N., &amp; Moser, T.</p>
+            <p class="publication__title">Optogenetic stimulation of the auditory pathway</p>
+            <p class="publication__venue"><em>Journal of Clinical Investigation</em>, 2014</p>
+            <a class="publication__link" href="https://doi.org/10.1172/JCI69050" target="_blank" rel="noopener noreferrer">doi:10.1172/JCI69050</a>
+          </li>
+
+          <li class="publication">
+            <p class="publication__authors">Moser, T.</p>
+            <p class="publication__title">Optogenetic stimulation of cochlear neurons for future optical cochlear implants</p>
+            <p class="publication__venue"><em>Cold Spring Harbor Symposia on Quantitative Biology</em>, 2015</p>
+            <a class="publication__link" href="https://doi.org/10.1101/sqb.2015.80.027425" target="_blank" rel="noopener noreferrer">doi:10.1101/sqb.2015.80.027425</a>
+          </li>
+
+          <li class="publication">
+            <p class="publication__authors">Wrobel, C., Dieter, A., Huet, A., Keppeler, D., Duque-Afonso, C. J., Vogl, C., Hoch, G., Jeschke, M., &amp; Moser, T.</p>
+            <p class="publication__title">Optogenetic stimulation of cochlear neurons activates the auditory pathway and restores auditory-driven behavior in deaf adult gerbils</p>
+            <p class="publication__venue"><em>Science Translational Medicine</em>, 2018</p>
+            <a class="publication__link" href="https://doi.org/10.1126/scitranslmed.aao0540" target="_blank" rel="noopener noreferrer">doi:10.1126/scitranslmed.aao0540</a>
+          </li>
+
+          <li class="publication">
+            <p class="publication__authors">Keppeler, D., Kampshoff, C. A., Thirumalai, A., Duque-Afonso, C. J., Schaeper, J., Quilitz, T., Töpperwien, M., Vogl, C., Hoch, G., Roser, D., Salditt, T., Jeschke, M., &amp; Moser, T.</p>
+            <p class="publication__title">Multiscale photonic imaging of the native and implanted cochlea</p>
+            <p class="publication__venue"><em>Proceedings of the National Academy of Sciences</em>, 2021</p>
+            <a class="publication__link" href="https://doi.org/10.1073/pnas.2014472118" target="_blank" rel="noopener noreferrer">doi:10.1073/pnas.2014472118</a>
+          </li>
+
+          <li class="publication">
+            <p class="publication__authors">Adenine Research (Pty) Ltd.</p>
+            <p class="publication__title">Biophysical modelling of optogenetically sensitised spiral ganglion neurons for optical cochlear implant design</p>
+            <p class="publication__venue"><em>Manuscript in preparation</em>, 2025</p>
+          </li>
+
+        </ol>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="container">
+      <p class="footer-brand">Adenine Research (Pty) Ltd.</p>
+      <p class="footer-copy">&copy; <span id="footer-year">2025</span> Adenine Research (Pty) Ltd. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <noscript>
+    <p style="text-align:center;padding:1rem;background:#fff3cd;color:#856404;">
+      This site works best with JavaScript enabled. Navigation and form features may be limited without it.
+    </p>
+  </noscript>
+
+  <script src="js/nav.js" defer></script>
+
+</body>
+</html>

@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200" role="img" aria-label="Team member photo placeholder">
+  <title>Team member photo placeholder</title>
+  <rect width="200" height="200" fill="#e5e7eb" rx="8"/>
+  <!-- Head -->
+  <circle cx="100" cy="75" r="35" fill="#9ca3af"/>
+  <!-- Body -->
+  <ellipse cx="100" cy="165" rx="55" ry="45" fill="#9ca3af"/>
+</svg>

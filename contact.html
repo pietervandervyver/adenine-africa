@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact — Adenine Research (Pty) Ltd.</title>
+  <meta name="description" content="Get in touch with Adenine Research to discuss collaborations, partnerships, or funding opportunities." />
+  <link rel="stylesheet" href="css/reset.css" />
+  <link rel="stylesheet" href="css/variables.css" />
+  <link rel="stylesheet" href="css/main.css" />
+</head>
+<body>
+
+  <header>
+    <nav id="site-nav" aria-label="Site navigation">
+      <a href="index.html" class="nav-logo">
+        <img src="assets/logo.svg" alt="Adenine Research wordmark" width="180" height="36" />
+      </a>
+      <button id="nav-toggle" aria-expanded="false" aria-controls="nav-links" aria-label="Toggle navigation menu">
+        &#9776;
+      </button>
+      <ul id="nav-links" role="list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="research.html">Research</a></li>
+        <li><a href="team.html">Team</a></li>
+        <li><a href="contact.html" aria-current="page">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- Page Header -->
+    <section class="page-header section" aria-labelledby="contact-heading">
+      <div class="container">
+        <h1 id="contact-heading">Contact Us</h1>
+        <p class="page-header__lead">Interested in collaborating, investing, or learning more about our research? We'd love to hear from you.</p>
+      </div>
+    </section>
+
+    <!-- Contact Content -->
+    <section class="contact-section section" aria-labelledby="contact-info-heading">
+      <div class="container contact-section__inner">
+
+        <!-- Company Info -->
+        <aside class="contact-info" aria-labelledby="contact-info-heading">
+          <h2 id="contact-info-heading">Get in Touch</h2>
+          <p>Reach out to us directly or use the form and we'll respond as soon as possible.</p>
+          <ul class="contact-info__list">
+            <li class="contact-info__item">
+              <span class="contact-info__label">Email</span>
+              <a href="mailto:info@adenineresearch.co.za" class="contact-info__value">info@adenineresearch.co.za</a>
+            </li>
+            <li class="contact-info__item">
+              <span class="contact-info__label">Location</span>
+              <span class="contact-info__value">Cape Town, South Africa</span>
+            </li>
+          </ul>
+        </aside>
+
+        <!-- Contact Form -->
+        <div class="contact-form-wrapper">
+          <h2 class="visually-hidden">Send a Message</h2>
+
+          <div id="form-success" class="form-success" hidden aria-live="polite" role="status">
+            <p>Thank you for your message. We'll be in touch shortly.</p>
+          </div>
+
+          <form id="contact-form" class="contact-form" novalidate>
+
+            <div class="form-field">
+              <label for="name">Name</label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                autocomplete="name"
+                required
+                aria-describedby="name-error"
+              />
+              <span class="field-error" id="name-error" aria-live="polite"></span>
+            </div>
+
+            <div class="form-field">
+              <label for="email">Email address</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                autocomplete="email"
+                required
+                aria-describedby="email-error"
+              />
+              <span class="field-error" id="email-error" aria-live="polite"></span>
+            </div>
+
+            <div class="form-field">
+              <label for="subject">Subject</label>
+              <input
+                type="text"
+                id="subject"
+                name="subject"
+                required
+                aria-describedby="subject-error"
+              />
+              <span class="field-error" id="subject-error" aria-live="polite"></span>
+            </div>
+
+            <div class="form-field">
+              <label for="message">Message</label>
+              <textarea
+                id="message"
+                name="message"
+                rows="6"
+                required
+                aria-describedby="message-error"
+              ></textarea>
+              <span class="field-error" id="message-error" aria-live="polite"></span>
+            </div>
+
+            <button type="submit" class="btn btn-primary">Send Message</button>
+
+          </form>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="container">
+      <p class="footer-brand">Adenine Research (Pty) Ltd.</p>
+      <p class="footer-copy">&copy; <span id="footer-year">2025</span> Adenine Research (Pty) Ltd. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <noscript>
+    <p style="text-align:center;padding:1rem;background:#fff3cd;color:#856404;">
+      This site works best with JavaScript enabled. Form validation requires JavaScript.
+    </p>
+  </noscript>
+
+  <script src="js/nav.js" defer></script>
+  <script src="js/contact.js" defer></script>
+
+</body>
+</html>
